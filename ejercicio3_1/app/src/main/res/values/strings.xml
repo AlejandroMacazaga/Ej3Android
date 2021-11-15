@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ejercicio3_1</string>
+    <string name="act1">ACTIVIDAD 01</string>
+    <string name="act2">ACTIVIDAD 02</string>
+    <string name="act3">ACTIVIDAD 03</string>
+    <string name="act4">ACTIVIDAD 04</string>
+    <string name="salir">SALIR</string>
+    <string name="title_activity_ej1">Ej1Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="verificar">Verificar</string>
+    <string name="aceptarCondiciones">Aceptar Condiciones</string>
+    <string name="volver">Volver</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="title_activity_3">Activity3</string>
+    <string name="title_activity_4">Activity4</string>
+    <string name="btnAceptar">ACEPTAR</string>
+    <string name="btnRechazar">RECHAZAR</string>
+    <string name="suma">SUMA</string>
+    <string name="comprobar">COMPROBAR RESULTADO</string>
+    <string name="txtCorrectas">PREGUNTAS CORRECTAS: </string>
+    <string name="txtIncorrectas">PREGUNTAS INCORRECTAS: </string>
+</resources>

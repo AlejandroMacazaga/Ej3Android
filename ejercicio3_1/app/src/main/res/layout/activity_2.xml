@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/textViewSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="@string/suma"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textViewPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNum1"
+        app:layout_constraintStart_toEndOf="@+id/editTextNum1" />
+
+    <TextView
+        android:id="@+id/textViewEquals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPlus"
+        app:layout_constraintStart_toEndOf="@+id/textViewPlus" />
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="61dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:enabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSuma"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSuma" />
+
+    <EditText
+        android:id="@+id/editTextRespuesta"
+        android:layout_width="61dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNum2"
+        app:layout_constraintStart_toStartOf="@+id/textViewEquals" />
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="61dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNum1"
+        app:layout_constraintStart_toStartOf="@+id/textViewPlus" />
+
+    <Button
+        android:id="@+id/btnComprobar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="152dp"
+        android:text="@string/comprobar"
+        app:layout_constraintStart_toStartOf="@+id/editTextNum1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSuma" />
+
+    <TextView
+        android:id="@+id/textViewCorrectas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:text="Respuestas correctas:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprobar" />
+
+    <TextView
+        android:id="@+id/textViewIncorrectas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        android:text="Respuestas incorrectas:"
+        app:layout_constraintStart_toEndOf="@+id/textViewCorrectas"
+        app:layout_constraintTop_toBottomOf="@+id/btnComprobar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
